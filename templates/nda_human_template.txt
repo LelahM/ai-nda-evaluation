@@ -1,0 +1,50 @@
+NON-DISCLOSURE AGREEMENT
+
+This Non-Disclosure Agreement ("Agreement") is entered into on [DATE] by and between [PARTY 1 NAME], a [STATE/COUNTRY] [ENTITY TYPE] ("Disclosing Party"), and [PARTY 2 NAME], a [STATE/COUNTRY] [ENTITY TYPE] ("Receiving Party").
+
+1. PURPOSE
+The parties wish to explore [BUSINESS PURPOSE] and require the exchange of confidential information.
+
+2. CONFIDENTIAL INFORMATION
+"Confidential Information" means any and all non-public, proprietary, or confidential information disclosed by the Disclosing Party, including but not limited to: technical data, trade secrets, know-how, research, product plans, products, services, customers, customer lists, markets, software, developments, inventions, processes, formulas, technology, designs, drawings, engineering, hardware configuration information, marketing, finances, or other business information.
+
+3. OBLIGATIONS OF RECEIVING PARTY
+Receiving Party agrees to:
+a) Hold all Confidential Information in strict confidence
+b) Use Confidential Information solely for the Purpose stated above
+c) Not disclose Confidential Information to third parties without prior written consent
+d) Limit access to Confidential Information to employees or agents who need to know
+e) Protect Confidential Information with the same degree of care used for its own confidential information, but no less than reasonable care
+
+4. EXCEPTIONS
+The obligations above do not apply to information that:
+a) Is or becomes publicly available through no breach of this Agreement
+b) Is rightfully known by Receiving Party prior to disclosure
+c) Is rightfully received from a third party without breach of confidentiality
+d) Is required to be disclosed by law or court order (with prior notice to Disclosing Party)
+e) Is independently developed without use of Confidential Information
+
+5. RETURN OF MATERIALS
+Upon termination of this Agreement or upon request, Receiving Party shall promptly return or destroy all materials containing Confidential Information.
+
+6. TERM
+This Agreement shall remain in effect for [TERM] years from the date first written above, unless earlier terminated by mutual consent.
+
+7. REMEDIES
+Receiving Party acknowledges that disclosure of Confidential Information would cause irreparable harm for which monetary damages would be inadequate. Therefore, Disclosing Party shall be entitled to equitable relief, including injunction and specific performance, in addition to all other remedies.
+
+8. GENERAL PROVISIONS
+a) This Agreement shall be governed by the laws of [JURISDICTION]
+b) Any disputes shall be resolved in the courts of [JURISDICTION]
+c) If any provision is found unenforceable, the remainder shall remain in full force
+d) This Agreement constitutes the entire agreement between the parties on this subject
+e) Amendments must be in writing and signed by both parties
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+DISCLOSING PARTY:                    RECEIVING PARTY:
+
+_________________________           _________________________
+[Name]                              [Name]
+[Title]                             [Title]
+[Date]                              [Date]

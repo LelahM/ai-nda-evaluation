@@ -1,0 +1,25 @@
+Draft a comprehensive Non-Disclosure Agreement (NDA) for the following business scenario:
+
+PURPOSE: Create a legally structured NDA that protects confidential information while enabling legitimate business discussions.
+
+APPLICABLE LAW: Structure the agreement to be enforceable under common law principles with standard legal provisions.
+
+REQUIRED SECTIONS:
+1. Parties and effective date
+2. Definition of confidential information (broad but reasonable scope)
+3. Permitted and prohibited uses
+4. Obligations of receiving party
+5. Exceptions to confidentiality (standard legal exceptions)
+6. Return or destruction of information
+7. Term and termination
+8. Remedies and enforcement (including injunctive relief)
+9. General provisions (governing law, jurisdiction, severability)
+
+CLARITY REQUIREMENTS:
+- Use plain language where possible while maintaining legal precision
+- Define technical or business-specific terms
+- Structure with numbered sections and clear headings
+- Include specific time periods and deadlines
+- Address mutual vs. unilateral confidentiality as appropriate
+
+Ensure the document balances protection of confidential information with practical business needs and enforceability.

@@ -1,0 +1,74 @@
+{
+  "rubric": {
+    "name": "NDA Evaluation Rubric",
+    "version": "1.0",
+    "scoring_scale": {
+      "0": "Inadequate or missing",
+      "1": "Present but incomplete or unclear",
+      "2": "Comprehensive and well-structured"
+    },
+    "criteria": {
+      "completeness": {
+        "name": "Completeness (Essential Clauses)",
+        "weight": 0.25,
+        "description": "Presence of core NDA provisions",
+        "components": [
+          "Party identification and effective date",
+          "Definition of confidential information",
+          "Use restrictions and permitted purposes",
+          "Obligations of receiving party",
+          "Standard exceptions to confidentiality",
+          "Return/destruction provisions",
+          "Term and termination",
+          "Remedies and enforcement mechanisms"
+        ]
+      },
+      "legal_structure": {
+        "name": "Legal Structure",
+        "weight": 0.2,
+        "description": "Professional legal document formatting",
+        "components": [
+          "Clear section organization with headings",
+          "Proper legal language and terminology",
+          "Consistent clause numbering and structure",
+          "Professional document formatting"
+        ]
+      },
+      "clarity_precision": {
+        "name": "Clarity and Precision",
+        "weight": 0.2,
+        "description": "Understandability and specificity",
+        "components": [
+          "Plain language where appropriate",
+          "Defined terms for technical/business concepts",
+          "Specific timeframes and deadlines",
+          "Clear obligations and restrictions",
+          "Avoidance of ambiguous language"
+        ]
+      },
+      "risk_mitigation": {
+        "name": "Risk Mitigation",
+        "weight": 0.2,
+        "description": "Identification and address of key legal risks",
+        "components": [
+          "Broad but reasonable confidentiality scope",
+          "Injunctive relief provisions",
+          "Proper governing law and jurisdiction clauses",
+          "Severability provisions",
+          "Mutual vs. unilateral considerations"
+        ]
+      },
+      "business_alignment": {
+        "name": "Business Context Alignment", 
+        "weight": 0.15,
+        "description": "Appropriateness for stated business scenario",
+        "components": [
+          "Relevant to specific business relationship",
+          "Industry-specific considerations",
+          "Practical enforceability",
+          "Balanced protection without overreach"
+        ]
+      }
+    }
+  }
+}
