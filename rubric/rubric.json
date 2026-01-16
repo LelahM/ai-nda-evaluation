@@ -3,71 +3,121 @@
     "name": "NDA Evaluation Rubric",
     "version": "1.0",
     "scoring_scale": {
-      "0": "Inadequate or missing",
-      "1": "Present but incomplete or unclear",
-      "2": "Comprehensive and well-structured"
+      "0": "Missing",
+      "1": "Present but weak, vague, or creates legal risk",
+      "2": "Clear and acceptable for attorney review"
     },
+    "high_risk_categories": [
+      "exclusions",
+      "term_survival",
+      "return_destruction",
+      "governing_law_venue"
+    ],
     "criteria": {
-      "completeness": {
-        "name": "Completeness (Essential Clauses)",
-        "weight": 0.25,
-        "description": "Presence of core NDA provisions",
+      "parties_purpose": {
+        "name": "Parties and Purpose",
         "components": [
-          "Party identification and effective date",
-          "Definition of confidential information",
-          "Use restrictions and permitted purposes",
-          "Obligations of receiving party",
-          "Standard exceptions to confidentiality",
-          "Return/destruction provisions",
-          "Term and termination",
-          "Remedies and enforcement mechanisms"
-        ]
+          "Identifies both parties with legal form",
+          "States business purpose for information exchange",
+          "Includes effective date or placeholder"
+        ],
+        "notes_field": "Record observations with direct quotes"
       },
-      "legal_structure": {
-        "name": "Legal Structure",
-        "weight": 0.2,
-        "description": "Professional legal document formatting",
+      "confidential_info_definition": {
+        "name": "Confidential Information Definition",
         "components": [
-          "Clear section organization with headings",
-          "Proper legal language and terminology",
-          "Consistent clause numbering and structure",
-          "Professional document formatting"
-        ]
+          "Defines what information is protected",
+          "Scope is specific enough to be enforceable",
+          "Avoids overly broad or circular definitions"
+        ],
+        "notes_field": "Quote definition, note vagueness or overreach"
       },
-      "clarity_precision": {
-        "name": "Clarity and Precision",
-        "weight": 0.2,
-        "description": "Understandability and specificity",
+      "exclusions": {
+        "name": "Exclusions",
+        "high_risk": true,
         "components": [
-          "Plain language where appropriate",
-          "Defined terms for technical/business concepts",
-          "Specific timeframes and deadlines",
-          "Clear obligations and restrictions",
-          "Avoidance of ambiguous language"
-        ]
+          "Public information",
+          "Prior knowledge",
+          "Independent development",
+          "Lawful third-party disclosure",
+          "Required legal disclosure"
+        ],
+        "notes_field": "List which exceptions are present or missing"
       },
-      "risk_mitigation": {
-        "name": "Risk Mitigation",
-        "weight": 0.2,
-        "description": "Identification and address of key legal risks",
+      "obligations_use_care": {
+        "name": "Obligations (Use and Care)",
         "components": [
-          "Broad but reasonable confidentiality scope",
-          "Injunctive relief provisions",
-          "Proper governing law and jurisdiction clauses",
-          "Severability provisions",
-          "Mutual vs. unilateral considerations"
-        ]
+          "Limits use to stated purpose",
+          "Specifies care standard",
+          "Addresses who may access information"
+        ],
+        "notes_field": "Quote key obligation language"
       },
-      "business_alignment": {
-        "name": "Business Context Alignment", 
-        "weight": 0.15,
-        "description": "Appropriateness for stated business scenario",
+      "permitted_disclosures": {
+        "name": "Permitted Disclosures",
         "components": [
-          "Relevant to specific business relationship",
-          "Industry-specific considerations",
-          "Practical enforceability",
-          "Balanced protection without overreach"
-        ]
+          "Addresses disclosure to employees/agents/advisors",
+          "Specifies conditions for disclosure",
+          "Addresses notice for compelled disclosure"
+        ],
+        "notes_field": "Note gaps in disclosure controls"
+      },
+      "term_survival": {
+        "name": "Term and Survival",
+        "high_risk": true,
+        "components": [
+          "Specifies agreement duration",
+          "Addresses survival after termination",
+          "Creates obligation certainty"
+        ],
+        "notes_field": "Quote term language, note if survival missing"
+      },
+      "return_destruction": {
+        "name": "Return or Destruction of Materials",
+        "high_risk": true,
+        "components": [
+          "Requires return or destruction",
+          "Specifies trigger event",
+          "Provides information control mechanism"
+        ],
+        "notes_field": "Quote provision or note absence"
+      },
+      "remedies": {
+        "name": "Remedies",
+        "components": [
+          "Addresses available remedies",
+          "Includes injunctive relief",
+          "Goes beyond vague 'legal action' language"
+        ],
+        "notes_field": "Quote remedy language, note if injunctive relief missing"
+      },
+      "governing_law_venue": {
+        "name": "Governing Law and Venue",
+        "high_risk": true,
+        "components": [
+          "Specifies applicable law",
+          "Addresses jurisdiction or dispute resolution",
+          "Creates enforceability certainty"
+        ],
+        "notes_field": "Quote clause or note absence"
+      },
+      "no_license_partnership": {
+        "name": "No License / No Partnership / Assignment",
+        "components": [
+          "Clarifies no IP license granted",
+          "Addresses entire agreement, amendments, severability",
+          "Addresses assignment if relevant"
+        ],
+        "notes_field": "Note which provisions present"
+      },
+      "clarity_consistency": {
+        "name": "Clarity and Consistency",
+        "components": [
+          "Uses defined terms consistently",
+          "Avoids ambiguous pronouns or references",
+          "Structure supports understanding"
+        ],
+        "notes_field": "Identify unclear or inconsistent language"
       }
     }
   }

@@ -1,32 +1,38 @@
 # AI NDA Evaluation Project
 
-This project evaluates AI-assisted Non-Disclosure Agreement (NDA) drafting through systematic comparison of prompt versions across multiple business scenarios. The evaluation demonstrates a structured workflow for assessing legal AI outputs using human-centered review criteria, focusing on completeness, clarity, and risk identification rather than legal correctness.
+AI-generated legal documents require systematic evaluation to identify risks, gaps, and inconsistencies that could expose clients to legal liability. This project demonstrates a rubric-based methodology for assessing AI-drafted Non-Disclosure Agreements (NDAs) by comparing baseline prompts against structured, constraint-driven prompts across three business scenarios.
+
+## Problem Statement
+
+Legal AI tools can generate contract drafts quickly, but outputs vary widely in quality, completeness, and enforceability. Without structured evaluation criteria, legal professionals cannot consistently assess whether an AI-generated draft is suitable as a starting point for review. This project addresses that gap by applying measurable, reproducible criteria to AI-generated NDAs.
+
+## Workflow
+
+This project follows a four-step evaluation process:
+
+1. **Draft**: Generate NDAs using baseline (v1) and structured (v2) prompts
+2. **Evaluate**: Score each draft against a standardized rubric (0-2 scale per category)
+3. **Compare**: Identify improvements and remaining gaps between prompt versions
+4. **Document**: Record findings with quoted evidence and risk flags for high-impact omissions
 
 ## Repository Navigation
 
-- **`prompts/`** - Contains versioned AI prompts (v1: baseline, v2: structured)
-- **`templates/`** - Reference NDA template and source documentation  
-- **`rubric/`** - Evaluation criteria in markdown and JSON formats
-- **`examples/`** - Three business scenarios with AI-generated drafts
-- **`evaluation/`** - Scoring results and analysis for each scenario
-  - See [`rubric_coverage_summary.md`](evaluation/rubric_coverage_summary.md) for cross-scenario comparison
-- **`report/`** - Comprehensive case study and findings
-- **`scripts/`** - Optional automation tools for draft generation and critique
-
-## Methodology
-
-1. **Draft Generation**: Apply prompt versions to business scenarios using AI
-2. **Systematic Evaluation**: Score outputs against structured rubric (0-2 scale)
-3. **Comparative Analysis**: Identify improvements between prompt versions
-4. **Documentation**: Capture findings and workflow insights
+- **`prompts/`** - Baseline (v1) and structured (v2) prompts demonstrating prompt engineering impact
+- **`templates/`** - Reference NDA template showing expected clause structure
+- **`rubric/`** - Evaluation criteria (0 = missing, 1 = weak/risky, 2 = acceptable) in Markdown and JSON
+- **`examples/`** - Three business scenarios with scenario metadata, AI outputs, and inline scoring
+- **`evaluation/`** - Cross-scenario analysis, risk flag summaries, and pattern identification
+  - See [`rubric_coverage_summary.md`](evaluation/rubric_coverage_summary.md) for comparative results
+- **`report/`** - Case study analyzing methodology, results, and workflow implications
+- **`scripts/`** - Python tools for automated draft generation and critique (educational use)
 
 ## Key Findings
 
-- Structured prompts (v2) consistently improved clause completeness and legal precision
-- AI outputs require systematic human review for risk identification and context validation
-- Evaluation rubrics enable reproducible assessment of legal AI tools
-- Workflow integration with existing legal technology platforms shows promise for professional adoption
-- Critical gaps remain in nuanced risk assessment and jurisdiction-specific requirements
+- Baseline prompts consistently omitted critical clauses: exclusions (0/3 drafts), return/destruction (0/3 drafts), and governing law (0/3 drafts)
+- Structured prompts eliminated high-risk gaps in 100% of scenarios, improving average scores from 5/22 to 22/22 points
+- All baseline outputs lacked injunctive relief provisions, creating unenforceable confidentiality obligations
+- Industry-specific requirements (HIPAA compliance, international arbitration) appeared only when explicitly prompted
+- Even improved drafts require attorney review for business-specific customization and jurisdiction-specific requirements
 
 ## Limitations and Responsible Use
 
@@ -34,7 +40,7 @@ This evaluation is designed for educational and research purposes only. AI-gener
 
 ## Connection to Legal AI Tools
 
-The workflow demonstrated here aligns with emerging legal AI drafting tools such as LexisNexis Protégé, providing a framework for evaluating and improving AI assistance in legal document preparation while maintaining necessary human oversight and professional responsibility.
+This evaluation framework aligns with the draft-review workflow used in legal AI platforms such as LexisNexis Protégé and Lexis+ AI. Those tools generate initial contract drafts based on user inputs and templates, which attorneys then review and customize. This project demonstrates how structured prompts improve initial draft quality and how rubric-based evaluation can systematically identify gaps requiring attorney review. The methodology supports integration of AI assistance into professional legal workflows while maintaining necessary human oversight and quality control.
 
 ## How to Add a New Scenario
 
