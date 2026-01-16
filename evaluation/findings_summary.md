@@ -9,6 +9,22 @@
 | Joint Venture | 1/10 | 10/10 | 900% | International business sophistication |
 | **Average** | **1.7/10** | **10/10** | **567%** | Structured prompt engineering |
 
+## Rubric Category Performance
+
+| Category | V1 Avg Score | V2 Avg Score | Change | Impact |
+|----------|--------------|--------------|--------|--------|
+| Parties and Purpose | 1.0 | 2.0 | +100% | Professional identification |
+| Confidential Info Definition | 1.0 | 2.0 | +100% | Enforceable scope |
+| Exclusions | 0.0 | 2.0 | +200% | Legal enforceability |
+| Obligations (Use and Care) | 1.0 | 2.0 | +100% | Clear standards |
+| Permitted Disclosures | 1.0 | 2.0 | +100% | Risk controls |
+| Term and Survival | 1.0 | 2.0 | +100% | Obligation clarity |
+| Return/Destruction | 0.0 | 2.0 | +200% | Information control |
+| Remedies | 1.0 | 2.0 | +100% | Breach protection |
+| Governing Law and Venue | 0.0 | 2.0 | +200% | Enforceability certainty |
+| No License / Partnership | 0.0 | 1.3 | +130% | IP protection |
+| Clarity and Consistency | 1.0 | 2.0 | +100% | Document quality |
+
 ## Critical Pattern Analysis
 
 ### Prompt V1 Consistent Failures
@@ -82,6 +98,10 @@
 - **Baseline Generation**: V2-quality prompts could provide useful first drafts for legal review
 - **Efficiency Gains**: Structured AI assistance could accelerate document preparation
 - **Quality Control**: Systematic evaluation rubrics enable consistent quality assessment
+
+## What AI Still Missed
+
+Even with structured prompts, AI-generated outputs require attorney review for several critical gaps. None of the V2 drafts included explicit "no license to intellectual property" clauses, earning only partial scores (1.0-1.3/2.0 average) in the No License/Partnership category. AI tools also cannot assess business-specific risk allocation needs—for example, whether the healthcare vendor scenario requires additional HIPAA Business Associate Agreement provisions, or whether the international joint venture needs export control compliance clauses. Finally, AI outputs lack jurisdiction-specific nuance: the New York governing law designation in structured prompts does not account for choice-of-law enforceability issues in international agreements or conflicts with mandatory local employment laws. These limitations underscore why attorney review remains essential regardless of prompt quality.
 
 ## Recommendations for Legal AI Implementation
 

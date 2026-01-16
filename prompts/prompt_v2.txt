@@ -22,4 +22,4 @@ Format requirements:
 - Include specific timeframes for key obligations
 - Structure obligations so they can be evaluated against clear criteria
 
-The draft should be suitable for attorney review and customization.
+The draft should be suitable for rubric-based evaluation and attorney review.

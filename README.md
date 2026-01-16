@@ -1,6 +1,8 @@
 # AI NDA Evaluation Project
 
-AI-generated legal documents require systematic evaluation to identify risks, gaps, and inconsistencies that could expose clients to legal liability. This project demonstrates a rubric-based methodology for assessing AI-drafted Non-Disclosure Agreements (NDAs) by comparing baseline prompts against structured, constraint-driven prompts across three business scenarios.
+AI-generated legal documents require systematic evaluation to identify risks, gaps, and inconsistencies that could expose clients to legal liability. This project evaluates AI-generated legal drafts using a structured rubric rather than trusting output quality.
+
+**Disclaimer:** This repository is educational and does not provide legal advice.
 
 ## Problem Statement
 
@@ -8,12 +10,13 @@ Legal AI tools can generate contract drafts quickly, but outputs vary widely in 
 
 ## Workflow
 
-This project follows a four-step evaluation process:
+This project follows a five-step evaluation process:
 
-1. **Draft**: Generate NDAs using baseline (v1) and structured (v2) prompts
-2. **Evaluate**: Score each draft against a standardized rubric (0-2 scale per category)
-3. **Compare**: Identify improvements and remaining gaps between prompt versions
-4. **Document**: Record findings with quoted evidence and risk flags for high-impact omissions
+1. Generate NDA draft using baseline (v1) and structured (v2) prompts
+2. Compare AI output to human-drafted template
+3. Score each draft using 0/1/2 rubric (0 = missing, 1 = weak/risky, 2 = acceptable)
+4. Flag high-risk omissions in critical categories
+5. Document findings with quoted evidence and version comparison
 
 ## Repository Navigation
 
@@ -28,11 +31,21 @@ This project follows a four-step evaluation process:
 
 ## Key Findings
 
-- Baseline prompts consistently omitted critical clauses: exclusions (0/3 drafts), return/destruction (0/3 drafts), and governing law (0/3 drafts)
-- Structured prompts eliminated high-risk gaps in 100% of scenarios, improving average scores from 5/22 to 22/22 points
-- All baseline outputs lacked injunctive relief provisions, creating unenforceable confidentiality obligations
-- Industry-specific requirements (HIPAA compliance, international arbitration) appeared only when explicitly prompted
-- Even improved drafts require attorney review for business-specific customization and jurisdiction-specific requirements
+- Eliminated critical omissions: Baseline prompts missed exclusions in 100% of drafts (0/3), structured prompts included them in 100% (3/3)
+- Improved enforceability: All baseline outputs lacked injunctive relief provisions; structured prompts included them in all scenarios
+- Reduced ambiguity: Baseline drafts averaged 5/22 points on clarity and completeness; structured prompts averaged 22/22 points
+- Still missing: Even improved drafts require attorney review for jurisdiction-specific provisions and business-specific risk allocation
+
+### Example: Why Scoring Matters
+
+From Scenario 1, Draft 1 (Baseline):
+
+> "Obligations do not apply to information that: Is publicly available through no breach of this Agreement"
+
+**Score: 1** (Present but incomplete)  
+**Why not 2**: This exclusion clause covers public information but omits independent development, prior knowledge, and lawful third-party disclosure, which increases enforceability risk and may prevent parties from using their own independently developed information.
+
+Draft 2 (Structured) addressed this by including all five standard exclusions, earning a score of 2.
 
 ## Limitations and Responsible Use
 

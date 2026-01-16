@@ -3,9 +3,9 @@
     "name": "NDA Evaluation Rubric",
     "version": "1.0",
     "scoring_scale": {
-      "0": "Missing",
-      "1": "Present but weak, vague, or creates legal risk",
-      "2": "Clear and acceptable for attorney review"
+      "0": "Missing - The category or required element is absent from the draft",
+      "1": "Present but weak, vague, or creates legal risk - Element exists but is incomplete, ambiguous, or insufficient for enforceability",
+      "2": "Clear and acceptable for attorney review - Element is present, specific, and follows standard legal practice"
     },
     "high_risk_categories": [
       "exclusions",
@@ -16,6 +16,9 @@
     "criteria": {
       "parties_purpose": {
         "name": "Parties and Purpose",
+        "what_earns_0": "No party identification or missing legal entity form",
+        "what_earns_1": "Parties named but missing jurisdiction, legal form, or business purpose",
+        "what_earns_2": "Both parties identified with legal form (Corp, LLC, etc.), jurisdiction, and business purpose stated",
         "components": [
           "Identifies both parties with legal form",
           "States business purpose for information exchange",
@@ -25,6 +28,9 @@
       },
       "confidential_info_definition": {
         "name": "Confidential Information Definition",
+        "what_earns_0": "No definition provided or only circular language (\"confidential means confidential\")",
+        "what_earns_1": "Definition exists but is overly broad (\"all information\") or too vague to enforce",
+        "what_earns_2": "Specific definition with examples, avoids overbroad language, enforceable scope",
         "components": [
           "Defines what information is protected",
           "Scope is specific enough to be enforceable",
@@ -35,6 +41,9 @@
       "exclusions": {
         "name": "Exclusions",
         "high_risk": true,
+        "what_earns_0": "No exclusions clause present",
+        "what_earns_1": "Partial exclusions (e.g., only public information, missing independent development or required disclosure)",
+        "what_earns_2": "Standard exclusions present (public, prior knowledge, independent development, lawful third-party, required legal disclosure)",
         "components": [
           "Public information",
           "Prior knowledge",
@@ -46,6 +55,9 @@
       },
       "obligations_use_care": {
         "name": "Obligations (Use and Care)",
+        "what_earns_0": "No use restrictions or care standards specified",
+        "what_earns_1": "Vague obligations (\"keep confidential\") without specific use limitations or care standard",
+        "what_earns_2": "Specific use limitations tied to business purpose, defined care standard (reasonable care or same-as-own)",
         "components": [
           "Limits use to stated purpose",
           "Specifies care standard",
@@ -55,6 +67,9 @@
       },
       "permitted_disclosures": {
         "name": "Permitted Disclosures",
+        "what_earns_0": "No guidance on who may access confidential information",
+        "what_earns_1": "Mentions employees/agents but lacks conditions or compelled disclosure procedure",
+        "what_earns_2": "Specifies permitted recipients, conditions for disclosure, notice requirements for compelled disclosure",
         "components": [
           "Addresses disclosure to employees/agents/advisors",
           "Specifies conditions for disclosure",
@@ -65,6 +80,9 @@
       "term_survival": {
         "name": "Term and Survival",
         "high_risk": true,
+        "what_earns_0": "No term specified or missing survival provisions",
+        "what_earns_1": "Term stated but survival unclear or absent",
+        "what_earns_2": "Clear agreement duration and explicit survival of confidentiality obligations post-termination",
         "components": [
           "Specifies agreement duration",
           "Addresses survival after termination",
@@ -75,6 +93,9 @@
       "return_destruction": {
         "name": "Return or Destruction of Materials",
         "high_risk": true,
+        "what_earns_0": "No provision for return or destruction",
+        "what_earns_1": "Mentions return/destruction but lacks trigger or procedure",
+        "what_earns_2": "Clear return/destruction requirement with specified trigger (termination, request) and procedure",
         "components": [
           "Requires return or destruction",
           "Specifies trigger event",
@@ -84,6 +105,9 @@
       },
       "remedies": {
         "name": "Remedies",
+        "what_earns_0": "No remedies specified or only generic \"legal action\"",
+        "what_earns_1": "Mentions damages but omits injunctive relief or equitable remedies",
+        "what_earns_2": "Includes both monetary damages and injunctive relief, acknowledges irreparable harm",
         "components": [
           "Addresses available remedies",
           "Includes injunctive relief",
@@ -94,6 +118,9 @@
       "governing_law_venue": {
         "name": "Governing Law and Venue",
         "high_risk": true,
+        "what_earns_0": "No governing law or jurisdiction clause",
+        "what_earns_1": "Governing law stated but jurisdiction/venue missing or unclear",
+        "what_earns_2": "Both governing law and jurisdiction/dispute resolution clearly specified",
         "components": [
           "Specifies applicable law",
           "Addresses jurisdiction or dispute resolution",
@@ -103,6 +130,9 @@
       },
       "no_license_partnership": {
         "name": "No License / No Partnership / Assignment",
+        "what_earns_0": "No clarification on IP rights, entire agreement, or assignment",
+        "what_earns_1": "Partial coverage (e.g., entire agreement only, missing IP license clarification)",
+        "what_earns_2": "Clarifies no IP license, addresses entire agreement/amendments/severability, assignment restrictions if relevant",
         "components": [
           "Clarifies no IP license granted",
           "Addresses entire agreement, amendments, severability",
@@ -112,6 +142,9 @@
       },
       "clarity_consistency": {
         "name": "Clarity and Consistency",
+        "what_earns_0": "Undefined terms, inconsistent references, ambiguous pronouns throughout",
+        "what_earns_1": "Some defined terms but inconsistent usage or unclear references remain",
+        "what_earns_2": "Defined terms used consistently, clear structure, unambiguous obligations",
         "components": [
           "Uses defined terms consistently",
           "Avoids ambiguous pronouns or references",
