@@ -9,6 +9,7 @@ This project evaluates AI-assisted Non-Disclosure Agreement (NDA) drafting throu
 - **`rubric/`** - Evaluation criteria in markdown and JSON formats
 - **`examples/`** - Three business scenarios with AI-generated drafts
 - **`evaluation/`** - Scoring results and analysis for each scenario
+  - See [`rubric_coverage_summary.md`](evaluation/rubric_coverage_summary.md) for cross-scenario comparison
 - **`report/`** - Comprehensive case study and findings
 - **`scripts/`** - Optional automation tools for draft generation and critique
 
@@ -34,3 +35,18 @@ This evaluation is designed for educational and research purposes only. AI-gener
 ## Connection to Legal AI Tools
 
 The workflow demonstrated here aligns with emerging legal AI drafting tools such as LexisNexis Protégé, providing a framework for evaluating and improving AI assistance in legal document preparation while maintaining necessary human oversight and professional responsibility.
+
+## How to Add a New Scenario
+
+To maintain consistency and reproducibility, new scenario evaluations should follow this structure:
+
+1. **Scenario Metadata** - Parties, relationship type, NDA type, purpose, governing law
+2. **Scenario Input** - Detailed business context and key considerations
+3. **Prompt Used** - Reference to v1 and v2 prompt versions
+4. **AI Outputs** - Complete Draft 1 (v1) and Draft 2 (v2) text
+5. **Evaluation & Scoring** - Score each rubric category (0/1/2) with quoted evidence
+6. **Risk Flags** - Highlight any high-risk missing clauses (score = 0)
+7. **Version Comparison** - Summary of key improvements from v1 to v2
+8. **Reproducibility Checklist** - Confirm all required elements are documented
+
+See [`examples/scenario_1_startup_consulting.md`](examples/scenario_1_startup_consulting.md) for a complete reference implementation.

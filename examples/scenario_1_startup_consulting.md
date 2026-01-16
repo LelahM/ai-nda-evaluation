@@ -1,7 +1,13 @@
-# Scenario 1: Startup Consulting Relationship
+# Scenario 1: Startup Consulting
 
-## Scenario Description
+## Scenario Metadata
+- Parties: TechStart Inc. (Delaware corporation), BizAdvisors LLC (California LLC)
+- Relationship: Consulting engagement
+- NDA Type: Mutual
+- Purpose: Go-to-market strategy development, requiring mutual exchange of confidential information
+- Governing Law: California
 
+## Scenario Input
 TechStart Inc., an early-stage software startup, is seeking strategic consulting services from BizAdvisors LLC to develop their go-to-market strategy. The consulting engagement will require TechStart to share proprietary product roadmaps, customer data, financial projections, and technical specifications. BizAdvisors will also share their proprietary methodologies and market analysis techniques. Both parties need protection for their confidential information during the 6-month consulting engagement.
 
 **Key Considerations:**
@@ -12,7 +18,13 @@ TechStart Inc., an early-stage software startup, is seeking strategic consulting
 
 ---
 
-## Draft 1 Output (Prompt V1)
+## Prompt Used
+- Version 1: Baseline (see prompts/prompt_v1.txt)
+- Version 2: Structured (see prompts/prompt_v2.txt)
+
+---
+
+## AI Output: Draft 1 (Prompt v1)
 
 **NON-DISCLOSURE AGREEMENT**
 
@@ -32,7 +44,7 @@ _Signature lines for both parties_
 
 ---
 
-## Draft 2 Output (Prompt V2)
+## AI Output: Draft 2 (Prompt v2)
 
 **NON-DISCLOSURE AGREEMENT**
 
@@ -82,3 +94,75 @@ _________________________           _________________________
 Name: [Name]                         Name: [Name]
 Title: [Title]                       Title: [Title] 
 Date: [Date]                         Date: [Date]
+
+---
+
+## Evaluation & Scoring
+
+### Parties and Purpose
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2 clearly identifies both parties and the consulting purpose ("entered into on [DATE] between TechStart Inc., a Delaware corporation... and BizAdvisors LLC..."). Draft 1 only lists names, not legal form or purpose.
+
+### Confidential Information Definition
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2 provides a detailed definition ("means any non-public information disclosed by either party, including but not limited to: product roadmaps, technical specifications..."). Draft 1 is vague ("any information shared between the parties including business plans...").
+
+### Exclusions
+- Score: 2 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2 lists standard exclusions ("publicly available... rightfully known... required by law..."). Draft 1 has no exclusions section.
+
+### Obligations (Use and Care)
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2 details care and access ("maintain strict confidentiality... same degree of care... limit access..."). Draft 1: "agree to keep all shared information confidential" (no detail).
+
+### Permitted Disclosures
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2: "may not disclose... without prior written consent" and details on agents. Draft 1: "not disclose to third parties" (no exceptions or process).
+
+### Term and Survival
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2: "effective for two (2) years... obligations surviving termination". Draft 1: "effective for one year" (no survival language).
+
+### Return/Destruction
+- Score: 2 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2: "return or destroy all Confidential Information...". Draft 1: no mention of return or destruction.
+
+### Remedies
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2: "irreparable harm warranting injunctive relief...". Draft 1: "legal action for damages" (no injunctive relief).
+
+### Governing Law and Venue
+- Score: 2 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2: "governed by California law, with disputes resolved in California courts". Draft 1: no governing law or venue.
+
+### No License / No Partnership / Assignment
+- Score: 1 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2: "entire understanding... amendments must be in writing..." (partial coverage). Draft 1: no such language.
+
+### Clarity and Consistency
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2: clear, numbered sections, defined terms, and consistent structure. Draft 1: basic, lacks structure.
+
+---
+
+## Risk Flags
+- ⚠️ High Risk: Exclusions (Draft 1 = 0)
+- ⚠️ High Risk: Return/Destruction (Draft 1 = 0)
+- ⚠️ High Risk: Governing Law and Venue (Draft 1 = 0)
+- ⚠️ High Risk: Term and Survival (Draft 1 = 1, not fully compliant)
+
+---
+
+## Version Comparison Summary
+- Draft 2 (structured prompt) is complete, clear, and covers all rubric categories.
+- Draft 1 (baseline prompt) is missing exclusions, return/destruction, governing law, and other key protections.
+- Risk flags are present in Draft 1 for high-impact omissions.
+
+---
+
+## Reproducibility Checklist
+- [x] Scenario input documented
+- [x] Prompt version and text referenced
+- [x] AI outputs included
+- [x] Rubric applied with quoted evidence
+- [x] Risk flags present if needed

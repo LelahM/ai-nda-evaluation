@@ -1,7 +1,13 @@
 # Scenario 2: Vendor-Customer Relationship
 
-## Scenario Description
+## Scenario Metadata
+- Parties: MedDevice Corp (Delaware corporation), CloudSoft Solutions Inc. (Texas corporation)
+- Relationship: Vendor evaluation
+- NDA Type: Primarily unilateral (MedDevice → CloudSoft)
+- Purpose: Vendor evaluation for custom software platform development for medical device data management
+- Governing Law: Delaware
 
+## Scenario Input
 MedDevice Corp, a medical device manufacturer, is evaluating CloudSoft Solutions as a potential vendor for a custom software platform to manage patient data and device monitoring. The evaluation process requires CloudSoft to access MedDevice's existing system architecture, regulatory requirements, patient data schemas, and clinical workflow specifications. This is primarily a unilateral disclosure from MedDevice to CloudSoft, with potential for limited reciprocal sharing of CloudSoft's development methodologies.
 
 **Key Considerations:**
@@ -12,7 +18,13 @@ MedDevice Corp, a medical device manufacturer, is evaluating CloudSoft Solutions
 
 ---
 
-## Draft 1 Output (Prompt V1)
+## Prompt Used
+- Version 1: Baseline (see prompts/prompt_v1.txt)
+- Version 2: Structured (see prompts/prompt_v2.txt)
+
+---
+
+## AI Output: Draft 1 (Prompt v1)
 
 **NON-DISCLOSURE AGREEMENT**
 
@@ -30,7 +42,7 @@ Both parties sign below to agree to these terms.
 
 ---
 
-## Draft 2 Output (Prompt V2)
+## AI Output: Draft 2 (Prompt v2)
 
 **NON-DISCLOSURE AGREEMENT**
 
@@ -89,3 +101,75 @@ _________________________           _________________________
 Name: [Name]                         Name: [Name]
 Title: [Title]                       Title: [Title]
 Date: [Date]                         Date: [Date]
+
+---
+
+## Evaluation & Scoring
+
+### Parties and Purpose
+- Score: 2 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2 clearly identifies parties with legal form ("MedDevice Corp, a Delaware corporation... CloudSoft Solutions Inc., a Texas corporation") and states vendor evaluation purpose. Draft 1: "between MedDevice Corp and CloudSoft Solutions for software evaluation" (no legal form, minimal purpose).
+
+### Confidential Information Definition
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2 provides comprehensive definition specific to healthcare context ("system architecture specifications, patient data schemas, clinical workflow requirements, regulatory compliance documentation..."). Draft 1: "All information shared by MedDevice Corp including technical specifications, patient data requirements, and system details" (vague).
+
+### Exclusions
+- Score: 2 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2 includes standard exceptions ("publicly available... previously known... received from third parties... required to be disclosed by law..."). Draft 1: no exclusions clause.
+
+### Obligations (Use and Care)
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2 details healthcare-specific obligations ("implement appropriate safeguards consistent with healthcare data protection standards... comply with applicable healthcare privacy regulations including HIPAA"). Draft 1: "use the information only for preparing their software proposal" (basic, no care standard).
+
+### Permitted Disclosures
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2: "limit access to employees directly involved... ensure all personnel sign individual confidentiality agreements". Draft 1: "will not share it with competitors or other parties" (no detail on permitted internal disclosure).
+
+### Term and Survival
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2: "remain in effect for one (1) year... confidentiality obligations continuing for five (5) years post-termination" (appropriate for healthcare data). Draft 1: "lasts for 180 days from signing" (no survival provision).
+
+### Return/Destruction
+- Score: 2 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2: "promptly return all materials... destroy all copies, notes, and derivative materials... provide written certification". Draft 1: no return/destruction provision.
+
+### Remedies
+- Score: 2 (Draft 2), 1 (Draft 1)
+- Notes: Draft 2: "breach would cause irreparable harm... entitled to injunctive relief and monetary damages" with healthcare context noted. Draft 1: "MedDevice Corp can take legal action" (vague, no injunctive relief).
+
+### Governing Law and Venue
+- Score: 2 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2: "governed by Delaware law with exclusive jurisdiction in Delaware courts". Draft 1: no governing law or venue clause.
+
+### No License / No Partnership / Assignment
+- Score: 1 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2: "complete understanding between parties... modifications require written consent" (partial). Draft 1: no such language.
+
+### Clarity and Consistency
+- Score: 2 (Draft 2), 0 (Draft 1)
+- Notes: Draft 2: clear numbered sections, healthcare-specific terminology, consistent structure. Draft 1: informal bullet format, lacks professional structure.
+
+---
+
+## Risk Flags
+- ⚠️ High Risk: Exclusions (Draft 1 = 0)
+- ⚠️ High Risk: Return/Destruction (Draft 1 = 0)
+- ⚠️ High Risk: Governing Law and Venue (Draft 1 = 0)
+- ⚠️ High Risk: HIPAA Compliance Gap (Draft 1 has no healthcare regulatory awareness)
+
+---
+
+## Version Comparison Summary
+- Draft 2 demonstrates healthcare industry awareness with HIPAA compliance language and extended survival periods appropriate for sensitive medical data.
+- Draft 1 is inadequate for healthcare vendor relationships, lacking regulatory compliance considerations and essential legal protections.
+- Risk flags in Draft 1 could expose both parties to regulatory violations and unprotected sensitive information disclosure.
+
+---
+
+## Reproducibility Checklist
+- [x] Scenario input documented
+- [x] Prompt version and text referenced
+- [x] AI outputs included
+- [x] Rubric applied with quoted evidence
+- [x] Risk flags present if needed
