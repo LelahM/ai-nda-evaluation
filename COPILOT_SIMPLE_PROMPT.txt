@@ -1,0 +1,28 @@
+# COPY-PASTE PROMPT FOR COPILOT
+
+Generate 20 additional NDA evaluation scenarios (scenario_4 through scenario_23) matching the exact structure of examples/scenario_1_startup_consulting.md.
+
+Each scenario must include:
+1. Scenario Metadata (parties with legal entity form, relationship, NDA type, purpose, governing law)
+2. Scenario Input (2-3 paragraphs + Key Considerations bullets)
+3. Prompt Used (reference to v1 and v2)
+4. AI Output: Draft 1 (5-8 paragraphs, baseline prompt, missing key provisions)
+5. AI Output: Draft 2 (9-12 numbered sections, structured prompt, complete provisions)
+6. Evaluation & Scoring (all 11 rubric categories, 0/1/2 scores, quoted evidence)
+7. Risk Flags (⚠️ high-risk omissions: Exclusions, Return/Destruction, Governing Law, Term/Survival)
+8. Version Comparison Summary
+9. Reproducibility Checklist
+
+Requirements:
+- Distinct company names (no repetition)
+- Vary industries: tech, healthcare, finance, education, media, AI/ML, retail, manufacturing, real estate, legal services, consulting, biotech, energy, entertainment, SaaS, hardware, nonprofit
+- Vary NDA types: mutual (60%), unilateral (40%)
+- Vary governing law: NY, CA, DE, TX, MA, WA, IL, FL, VA, PA
+- Draft 1 scores 0-3 out of 22 points (missing exclusions, governing law, return/destruction, weak obligations)
+- Draft 2 scores 18-22 out of 22 points (all provisions present, clear structure)
+- Concise professional language (no marketing fluff)
+- Use 2025-2026 dates
+
+Naming: scenario_4_employee_onboarding.md, scenario_5_saas_vendor.md, scenario_6_merger_diligence.md, etc.
+
+Output 20 complete markdown files in examples/ directory.
